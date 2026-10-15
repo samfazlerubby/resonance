@@ -1,0 +1,32 @@
+name: resonance
+description: "Resonance — a local music player for Android with online album, artist and lyric info."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Playback + lock-screen / notification controls
+  just_audio: ^0.10.6
+  just_audio_background: ^0.0.1-beta.17
+  audio_session: ">=0.1.24 <0.3.0"
+
+  # Permission to read the music on the phone
+  permission_handler: ^13.0.2
+
+  # App state, networking and on-device caching
+  provider: ^6.1.2
+  http: ^1.2.2
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
+  crypto: ^3.0.5
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
